@@ -1,4 +1,4 @@
-import requests
+import requests # type: ignore
 
 url = "https://dl.fbaipublicfiles.com/fasttext/supervised-models/lid.176.bin"
 output_path = "lid.176.bin"
