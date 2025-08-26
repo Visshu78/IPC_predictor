@@ -1,4 +1,3 @@
-#version 3
 import os
 import json
 import pickle
@@ -39,10 +38,52 @@ def estimate_crime_severity(text):
     text_lower = text.lower()
 
     # Keywords indicating severity levels
-    extreme_keywords = ['murder', 'kill', 'death', 'rape', 'terrorism', 'explosive', 'kidnap', 'abduct']
-    high_keywords = ['assault', 'hurt', 'injure', 'rob', 'burglary', 'extort', 'threaten', 'weapon']
-    medium_keywords = ['cheat', 'fraud', 'forgery', 'thief', 'steal', 'damage', 'harass']
-    low_keywords = ['trespass', 'nuisance', 'disobey', 'disturb', 'simple hurt', 'minor']
+    extreme_keywords = [
+    'murder', 'kill', 'killed', 'stabbed to death', 'beheaded', 'hanged',
+    'rape', 'raped', 'sexual assault', 'molested badly', 'gang rape',
+    'terrorism', 'terrorist', 'bomb', 'explosive', 'blast', 'grenade',
+    'shooting', 'firing', 'massacre', 'genocide',
+    'kidnap', 'abduct', 'taken away', 'hostage', 'missing forcefully',
+    'suicide', 'attempt suicide', 'jumped from', 'drank poison',
+    'burn alive', 'acid attack'
+]
+
+    high_keywords = [
+    'assault', 'attacked', 'beaten up', 'hit badly', 'punched',
+    'hurt', 'injured', 'stab', 'knife attack', 'shot with gun',
+    'rob', 'robbed', 'snatched bag', 'stole purse', 'chain snatching',
+    'burglary', 'broke into house', 'looted', 'dacoity',
+    'extort', 'demand money', 'blackmail', 'ransom',
+    'threaten', 'life threat', 'warned to kill',
+    'weapon', 'armed', 'gunpoint', 'knife point',
+    'molested', 'touched inappropriately', 'forced himself',
+    'arson', 'set fire', 'burnt house'
+    ]
+
+    medium_keywords = [
+    'cheat', 'cheated', 'fraud', 'scam', 'took money', 'promised but ran away',
+    'forgery', 'fake papers', 'counterfeit notes',
+    'thief', 'pickpocket', 'wallet stolen', 'phone stolen',
+    'steal', 'stole bike', 'cycle stolen', 'house theft',
+    'embezzlement', 'took office money', 'bribery',
+    'damage', 'broke window', 'damaged car', 'smashed property',
+    'harass', 'harassed', 'eve teasing', 'catcalling',
+    'defamation', 'spread rumors', 'insult publicly',
+    'stalking', 'followed me', 'kept coming behind'
+    ]
+
+    low_keywords = [
+    'trespass', 'entered property', 'jumped wall', 'came inside without permission',
+    'nuisance', 'loud music', 'shouting on street',
+    'disobey', 'not following rules', 'argued with officer',
+    'disturb', 'disturbance', 'creating scene',
+    'loitering', 'roaming suspiciously', 'wandering around',
+    'simple hurt', 'slapped', 'pushed', 'minor injury',
+    'public drinking', 'drunk on road', 'drunk fight',
+    'eve teasing (mild)', 'passing comments', 'whistling at girls',
+    'noise complaint', 'neighbors fighting loudly',
+    'misconduct', 'misbehaved', 'abused in public'
+]
 
     # Count occurrences
     extreme_count = sum(1 for word in extreme_keywords if word in text_lower)
@@ -206,7 +247,7 @@ def find_ipc_hybrid(user_input: str, top_k: int = 3):
 
         # Penalize scores if punishment severity doesn't match crime severity
         severity_diff = abs(punishment_severity - crime_severity)
-        severity_penalty = 1.0 - (severity_diff * 0.5)  # Reduce score by up to 50% for severity mismatch
+        severity_penalty = 1.0 - (severity_diff * 0.3)  # Reduce score by up to 30% for severity mismatch
 
         calibrated_score = score * severity_penalty
         calibrated_scores.append(calibrated_score)
