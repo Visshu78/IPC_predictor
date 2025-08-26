@@ -17,6 +17,9 @@ huggingface_hub[hf_xet]>=0.16.0
 # Data handling and utilities
 # pickle5 not needed for Python 3.8+ (included in standard library)
 
+# For downloading files
+requests>=2.0.0
+
 # Note: After installing requirements, also run:
 # python -m spacy download en_core_web_sm
 
