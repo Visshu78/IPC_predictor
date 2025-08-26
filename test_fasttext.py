@@ -11,7 +11,7 @@ def test_fasttext_model():
     print("🔄 Loading FastText language detection model...")
     
     # Change to the IPC_predictor directory to find the model
-    model_path = r"\lid.176.bin"
+    model_path = r"lid.176.bin"
     
     if not os.path.exists(model_path):
         print(f"❌ Model file not found at: {model_path}")
