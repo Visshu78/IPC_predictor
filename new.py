@@ -29,7 +29,7 @@ except Exception as e:
 # CONFIG
 # -------------------------------
 # ... (previous config remains the same)
-CONFIDENCE_THRESHOLD = 0.50  # Minimum confidence score to display results
+CONFIDENCE_THRESHOLD = 0.55  # Minimum confidence score to display results
 
 # -------------------------------
 # DISPLAY RESULTS
