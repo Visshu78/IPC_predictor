@@ -65,7 +65,7 @@ python translator.py
 
 ## Myself
 
-#Vishal Dhawal
+**Vishal Dhawal**
 
 - 🎓 B.Tech CSE @ IIIT Kottayam | Minor @ IIT Mandi
 - 🔬 Interests: Machine Learning, Computer Vision, NLP, Human-Computer Interaction
@@ -73,7 +73,7 @@ python translator.py
 
 ## My Partner
 
-#Soumallya Sarkar
+**Soumallya Sarkar**
 
 - 🎓 B.Tech CSE @ IIIT Kottayam 
 - 🔬 Interests: Machine Learning, Computer Vision, NLP, Computer Networking, Encryption
