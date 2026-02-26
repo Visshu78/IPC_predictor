@@ -65,15 +65,16 @@ python translator.py
 
 ## Myself
 
-Vishal Dhawal
+#Vishal Dhawal
 
--🎓 B.Tech CSE @ IIIT Kottayam | Minor @ IIT Mandi
--🔬 Interests: Machine Learning, Computer Vision, NLP, Human-Computer Interaction
--🌐 GitHub: @Visshu78
+- 🎓 B.Tech CSE @ IIIT Kottayam | Minor @ IIT Mandi
+- 🔬 Interests: Machine Learning, Computer Vision, NLP, Human-Computer Interaction
+- 🌐 GitHub: @Visshu78
 
-## Major Contributor
+## My Partner
 
-Soumallya Sarkar
--🎓 B.Tech CSE @ IIIT Kottayam 
--🔬 Interests: Machine Learning, Computer Vision, NLP, Computer Networking
--🌐 GitHub: @soumallyasarkar
+#Soumallya Sarkar
+
+- 🎓 B.Tech CSE @ IIIT Kottayam 
+- 🔬 Interests: Machine Learning, Computer Vision, NLP, Computer Networking, Encryption
+- 🌐 GitHub: @soumallyasarkar
