@@ -67,13 +67,13 @@ python translator.py
 
 Vishal Dhawal
 
-🎓 B.Tech CSE @ IIIT Kottayam | Minor @ IIT Mandi
-🔬 Interests: Machine Learning, Computer Vision, NLP, Human-Computer Interaction
-🌐 GitHub: @Visshu78
+-🎓 B.Tech CSE @ IIIT Kottayam | Minor @ IIT Mandi
+-🔬 Interests: Machine Learning, Computer Vision, NLP, Human-Computer Interaction
+-🌐 GitHub: @Visshu78
 
 ## Major Contributor
 
 Soumallya Sarkar
-🎓 B.Tech CSE @ IIIT Kottayam 
-🔬 Interests: Machine Learning, Computer Vision, NLP, Computer Networking
-🌐 GitHub: @soumallyasarkar
+-🎓 B.Tech CSE @ IIIT Kottayam 
+-🔬 Interests: Machine Learning, Computer Vision, NLP, Computer Networking
+-🌐 GitHub: @soumallyasarkar
