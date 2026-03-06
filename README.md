@@ -25,20 +25,6 @@ It supports **10+ Indian languages**, automatically translates queries to Englis
 
 ---
 
-## 📂 Project Structure 
-IPC_predictor/
-│── ipc.py # Core IPC prediction engine (hybrid + severity calibration)
-│── translator.py # Multilingual support (language detection + translation)
-│── new.py # CLI interface with confidence filtering
-│── test_import.py # Basic import test
-│── test_fixed_translator.py # Debugging translation issues
-│── debug_translation.py # Translation test script
-│── merged.json # IPC dataset (sections, punishments, details)
-│── ipc_embeddings.pkl # Precomputed embeddings
-│── ipc_tfidf.pkl # Precomputed TF-IDF vectors
-│── README.md # Project documentation
-
-
 ## 🚀 Usage  
 
 ### 1️⃣ Clone the repository  
