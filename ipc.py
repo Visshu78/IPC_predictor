@@ -31,7 +31,6 @@ except OSError:
 # SEVERITY CALIBRATION
 # -------------------------------
 def estimate_crime_severity(text):
-    """Estimate the severity of a crime description based on keywords and context"""
     if not text:
         return 0.5  # Medium severity by default
 

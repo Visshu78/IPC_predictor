@@ -1,28 +1,20 @@
-# Core machine learning and NLP libraries
-transformers>=4.21.0
+# Core ML / NLP
 sentence-transformers>=2.2.0
 scikit-learn>=1.1.0
 numpy>=1.24.0,<2.0
+transformers>=4.21.0
 
-# Language detection and translation
+# Web UI
+streamlit>=1.32.0
+
+# Language detection (for translator.py — optional for English-only mode)
 fasttext-wheel>=0.9.2
 
-# NLP processing
-spacy>=3.4.0
-
-# Hugging Face ecosystem enhancements
-hf_xet>=1.1.0
-huggingface_hub[hf_xet]>=0.16.0
-
-# Data handling and utilities
-# pickle5 not needed for Python 3.8+ (included in standard library)
-
-# For downloading files
+# Downloader utility
 requests>=2.0.0
 
-# Note: After installing requirements, also run:
-# python -m spacy download en_core_web_sm
+# Optional spaCy (loaded in ipc.py legacy — not used in ipc_core.py)
+# spacy>=3.4.0
 
-# Optional: For better performance
-# torch>=1.12.0  # Uncomment if you want to specify PyTorch version
-# accelerate>=0.20.0  # Uncomment for faster model loading
+# Note: run separately after install:
+# python -m spacy download en_core_web_sm  (only if using legacy ipc.py)
